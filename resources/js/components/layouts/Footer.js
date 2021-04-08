@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return ( 
         <div>
-            <p>All Right Reserved By CodeCheef</p>
+            <p>&copy; 2021 all right reserved by codecheef</p>
         </div>
      );
 }

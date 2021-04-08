@@ -11,7 +11,7 @@ import {
 import Footer from './layouts/Footer';
 import Header from './layouts/Header';
 import Home from './pages/Home';
-import { Button } from 'react-bootstrap';
+import Project from './pages/projects/Project';
 
 class App extends React.Component {
 
@@ -24,7 +24,16 @@ class App extends React.Component {
             <div>
                 <Router>
                     <Header/>
-                        <h1>Welcome to home</h1>
+                       <div>
+                            <Switch>
+                                <Route path="/project">
+                                    <Project/>
+                                </Route>
+                                <Route path="/">
+                                    <Home/>
+                                </Route>
+                            </Switch>
+                       </div>
                     <Footer/>
                 </Router>
             </div>

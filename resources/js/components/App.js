@@ -1,25 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
+
+import Footer from './layouts/Footer';
+import Header from './layouts/Header';
+import Home from './pages/Home';
+import { Button } from 'react-bootstrap';
+
 class App extends React.Component {
 
     state = {
-        counter: 0
+       
     }
-    incrementCounter = (value) => {
-        let newCounter = this.state.counter + value;
-        this.setState({
-            counter: newCounter
-        });
-    }
+
     render() { 
         return (
             <div>
-                <div>Count: {this.state.counter}</div>
-                <button className="btn btn-success" 
-                onClick={() => this.incrementCounter(10)}>
-                    +
-                </button>
+                <Router>
+                    <Header/>
+                        <h1>Welcome to home</h1>
+                    <Footer/>
+                </Router>
             </div>
         );
     }

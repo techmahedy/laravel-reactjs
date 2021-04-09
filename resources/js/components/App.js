@@ -12,6 +12,7 @@ import Footer from './layouts/Footer';
 import Header from './layouts/Header';
 import Home from './pages/Home';
 import Project from './pages/projects/Project';
+import ProjectCreate from './pages/projects/ProjectCreate';
 
 class App extends React.Component {
 
@@ -26,6 +27,9 @@ class App extends React.Component {
                     <Header/>
                        <div>
                             <Switch>
+                                <Route path="/createproject">
+                                    <ProjectCreate/>
+                                </Route>
                                 <Route path="/project">
                                     <Project/>
                                 </Route>

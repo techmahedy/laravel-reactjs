@@ -25,6 +25,7 @@ class Project extends React.Component {
         return (  
             <>  
             <h2>Project List  <Badge variant="secondary"> {this.state.projectList.length}</Badge></h2>
+          
             { this.state.isLoading && 
                 <Spinner animation="border" role="status">
                     <span className="sr-only">Loading...</span>

@@ -7,12 +7,15 @@ const Header = () => {
         <>
         <Navbar bg="dark" variant="dark">
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-auto">
-                <Link to="/">
+                <Nav className="mr-2">
+                <Link to="/" className="mr-4">
                     <Nav.Item>Home</Nav.Item>
                 </Link>
-                <Link to="/project">
+                <Link to="/project" className="mr-4">
                     <Nav.Item>Project List</Nav.Item>
+                </Link>
+                <Link to="/createproject" className="mr-4">
+                    <Nav.Item>Create Project</Nav.Item>
                 </Link>
                 </Nav>
             </Navbar.Collapse>
